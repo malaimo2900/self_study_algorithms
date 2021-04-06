@@ -47,6 +47,19 @@ public class DoubleVars {
     }
     
     public DoubleVars(double x, double y) {
+        this.x = x;
+        this.y = y;
         
+        this.test();
+    }
+    
+    public void test() {
+        if (this.x > 0 && this.x < 1 && this.y > 0 && this.y < 1) {
+            System.out.println("true");
+            System.exit(0);
+        } else {
+            System.out.println("false");
+            System.exit(3);
+        }
     }
 }
